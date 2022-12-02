@@ -1,0 +1,77 @@
+/* Blue: 2a9d8f */
+/* Light Orange: e9c46a */
+/* orange: e76f51 */
+
+body{
+    background-color:#2a9d8f;
+    font: bold;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+}
+
+div{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+.inputWrapper{
+    display: grid;
+    grid-template-columns: 50vh 50vh;
+
+}
+
+.input{
+    border:2vh solid #e76f51;
+    background-color:#e9c46a ;
+    height: 30vh;
+    border-radius:10vh;
+    font-family:cursive;
+    font-size: 3vh;
+    text-align: center;
+}
+
+#div_name{
+    margin-right: 5vh;
+}
+
+#div_msg{
+    margin-left: 5vh;
+}
+
+button{
+    width: 100vh;
+    border-radius: 5vh;
+    
+}
+
+#submit{
+    height: 10vh;
+    background-color:#264653;
+    color: #e9c46a;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: larger;
+}
+
+#databaseContent{
+    height: 5vh;
+    background-color: #e76f51;
+}
+
+.inputBox{
+    height: 20vh;
+    width: 30vh;
+    border-radius: 2vh;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+
+
+
+

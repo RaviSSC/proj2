@@ -1,0 +1,40 @@
+<!-- this file is where the css styling was created -->
+<!-- all styles are copied from here -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejs input file</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="content">
+<!-- make sure the form and the submit stay within the post request -->
+    <form action="/" method="POST" class="test">
+        <div class="inputWrapper">
+            <div class="input" id="div_name">
+                <label for="name">Whose here?</label>
+                <input type="text" name="name" placeholder="name" class="inputBox">
+            </div>
+            <div class="input" id="div_msg">
+                <label for="message">Leave us a note</label>
+                <input type="text" name="message" placeholder="Leave us a message" class="inputBox">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="submit">Click to send us your message</button>
+        </div>
+        <div class="buttons">
+            <a href="/dbContents">
+                <button id="databaseContent">See what others have said</button>
+            </a>
+        </div>
+        
+    </form>
+<!-- make sure the form and the submit stay within the post request -->    
+    </div>
+</body>
+</html>

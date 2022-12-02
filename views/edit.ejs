@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejs edit file</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="content">
+        <p>edit form for <%= eachdbEntry.name%></p>
+        <form action="/dbContents/<%=eachdbEntry._id%>?_method=PUT" method="POST">
+            <!-- <label for="name">Hello</label>
+            <input type="text" name="name" placeholder="putsomethinghere" value="<%=eachdbEntry.name%>">
+            <label for="message">Whats changed?</label>
+            <input type="text" name="message" placeholder="message"value="<%=eachdbEntry.message%>">
+            <button>Submit</button>
+        </form>
+        <a href="/dbContents"><input type="button" value="Abort- back to db"></a> -->
+        <div class="inputWrapper">
+            <div class="input" id="div_name">
+                <label for="name">Whose here?</label>
+                <input type="text" name="name" placeholder="name" class="inputBox">
+            </div>
+            <div class="input" id="div_msg">
+                <label for="message">Leave us a note</label>
+                <input type="text" name="message" placeholder="Leave us a message" class="inputBox">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="submit">Click to send us your message</button>
+        </div>
+        <div class="buttons">
+            <a href="/dbContents">
+                <button id="databaseContent">See what others have said</button>
+            </a>
+        </div>
+    </form>
+    </div>
+
+</body>
+</html>
