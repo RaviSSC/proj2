@@ -22,6 +22,7 @@ I had some computer issues and some issues with my inital idea, I thought in ord
 - Mongoose
 
 ☐ Next Steps: Planned future enhancements (icebox items).
+- Currently there is an error that prohibits the CSS file from running from most of the pages which I have been unable to solve, while the functionality if sound, i need to fix that error
 - I wish to learn and incorporate Google Authentication 
 - Learning and incorporating APIs, specially as it relates to Project 4
 
