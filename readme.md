@@ -8,7 +8,7 @@ I had some computer issues and some issues with my inital idea, I thought in ord
 
 ☐ Screenshot(s): A screenshot of your app's landing page and any other screenshots of interest.
 
-Landing-Page_ <img scr= "./Images/qAl1bZJ.png"/>
+Landing-Page_ <img scr= "./Images/landing.png"/>
 
 
 ☐ Technologies Used: List of the technologies used.
