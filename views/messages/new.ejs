@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add A Message</title>
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <main>
+      <form id="new_Message" action="/messages" method="post">
+        <label for="name">Your name</label>
+        <input type="text" name="name" />
+        <label for="date">Today's date</label>
+        <input type="datetime-local" class="date" name="date" />
+
+        <label for="location">Your Location</label>
+        <input type="text" name="location" />
+        <label for="Message">Your Message to post</label>
+        <textarea class="comment" name="descr"></textarea>
+        <button type="submit">Add Message</button>
+      </form>
+    </main>
+</body>
+</html>
