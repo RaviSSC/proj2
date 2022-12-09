@@ -1,4 +1,4 @@
-const Message = require("../models/messages");
+const message = require("../models/messages");
 
 module.exports = {
   createMessage,
