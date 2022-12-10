@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title><%= wine.name%></title> -->
+
+</head>
+
+<body>
+    
+    <h1><%= wine.name%></h1>
+    <div>
+        <a href="/<%=wine._id%>/inputWineReview">
+            <button>Got an opinion?</button>
+        </a>
+    </div>
+    <%for(let review of reviews){%>
+        <a href="/<%=wine._id%>/<%=review._id%>">
+            <li><%= review.mString%> </li>
+        </a>
+    <%}%> 
+    <h1><%= reviews.name%></h1>
+
+
+</body>
+</html>
+

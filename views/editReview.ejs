@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Review</title>
+</head>
+<body>
+    <p>Changing Someone's Opinion?</p>
+    <form action="/editReview/<%=wine._id%>/<%=review._id%>?_method=PUT" method="POST">
+        <label for="rName">Leave a card 🍷</label>
+        <input type="text" name="rName" placeholder="<%=review.rName%>">
+        <label for="mString">Whats your call</label>
+        <input type="text" name="mString" placeholder="<%=review.mString%>">
+        <button>Scandalize</button>
+    </form>
+</body>
+</html>

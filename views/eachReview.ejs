@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+</head>
+<body>
+    <p><%= review.rName%></p>
+    <p><%= review.mString%></p>
+
+    <form action="/<%=wine._id%>/<%=review._id%>?_method=DELETE" method="post">
+        <button>This person does not know wine! delete comment!</button>
+    </form>
+    
+    <div>
+        <a href="/editReview/<%=wine._id%>/<%=review._id%>">
+            <button>Have I got a better one for you!?!</button>
+        </a>
+    </div>
+
+
+    <!-- <li><%= review.mString%></li> -->
+
+</body>
+</html>
