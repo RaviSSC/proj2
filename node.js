@@ -17,8 +17,11 @@ const app =express();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs"); 
 app.use(express.urlencoded({ extended: true }));
-
 // end view engines set
+
+// pass in the css stylesheet
+app.use(express.static(path.join(__dirname,"public")))
+// end pass in the css stylesheet
 
 // database connection open and working
 mongoose.set("strictQuery",false);
@@ -69,7 +72,7 @@ app.post("/inputWine", (req, res)=>{
     newWine.save();
     res.redirect("/");
 })
-// this gives me each wine
+// // this gives me each wine
 app.get("/:id", async(req, res)=>{
     // res.send("the contents of the database go here")
     const {id}=req.params;
@@ -128,12 +131,7 @@ app.post("/editReview/:id1/:id2",async(req,res)=>{
     res.redirect("/")
 })
 
-// app.put("/dbContents/:id", async(req, res)=>{
-//     const {id}=req.params;
-//     const updatedEntry= await structureExported.findByIdAndUpdate(id, req.body, {runValidators: true})
-//     console.log(req.body);
-//     res.redirect(`/dbContents/${updatedEntry._id}`)
-// })
+
   
 
   
